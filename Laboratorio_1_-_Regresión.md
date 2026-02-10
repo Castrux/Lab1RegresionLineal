@@ -1,4 +1,4 @@
-# Laboratorio 1 - Exploración, preparación y regresión lineal 
+# Laboratorio 1 - Exploración, preparación y regresión lineal
 
 [Caso](#contexto)
 
@@ -18,47 +18,41 @@
 
 [Criterios de evaluación](#rubrica)
 
-[Uso de IAG en actividades del curso ISIS2611](#principios) 
+[Uso de IAG en actividades del curso ISIS2611](#principios)
 
 ## <a name="contexto"></a> Caso: AlpesHearth
-Las enfermedades cardiovasculares (e.g., infarto de miocardio, ictus e insuficiencia cardiaca) causan más de 20,5 millones de muertes cada año en el mundo, según la "World Heart Federation", de las cuales el 80% son evitables. AlpesHearth busca reducir esta cifra promoviendo cambios en el  estilo de vida --alimentación, actividad física, y manejo del estres. 
+
+Las enfermedades cardiovasculares (e.g., infarto de miocardio, ictus e insuficiencia cardiaca) causan más de 20,5 millones de muertes cada año en el mundo, según la "World Heart Federation", de las cuales el 80% son evitables. AlpesHearth busca reducir esta cifra promoviendo cambios en el  estilo de vida --alimentación, actividad física, y manejo del estres.
 
 Aunque históricamente el riesgo cardiovascular se ha asociado a edades avanzadas, hoy se reconoce que entre los **20 y 25 años** se consolidan hábitos poco saludables que incrementan el riesgo de forma silenciosa -- sedentarismo, mala alimentación, consumo de alcohol, tabaco, estrés crónico, y privación de sueño. La falta de síntomas no significa ausencia de riesgo, sino una **etapa clave para la prevención**, ya que descuidar la salud cardíaca en la adultez temprana compromete el bienestar a largo plazo.
 
 Esto motiva a AlpesHearth a contratarlos para desarrollar un proyecto orientado a **calcular el riesgo cardiovascular de la población** e **identificar los factores más relevantes**, con el fin de implementar campañas preventivas que promuevan la concientización y la reeducación de hábitos para reducir este riesgo creciente y silencioso
 
-
-
-
 ## <a name="objetivos"></a> Objetivos
 
-- Aplicar técnicas de regresión para construir un modelo predictivo que permita estimar el riesgo cardiovascular de una persona siguiendo el ciclo de machine learning. 
+- Aplicar técnicas de regresión para construir un modelo predictivo que permita estimar el riesgo cardiovascular de una persona siguiendo el ciclo de machine learning.
 - Determinar los principales factores de riesgo cardiovascular con base en los datos.
 - Aplicar y comprender un modelo de regresión lineal.
 - Reconocer posibles sesgos del modelo de aprendizaje de máquina.
 - Comunicar de forma clara y sintética los resultados obtenidos.
- 
-
 
 ## <a name="herramientas"></a> Herramientas
 
 Durante este laboratorio se trabajará con las siguientes herramientas:
 
-- Librerías de Python para el procesamiento y analisis de datos como: 
-    - Pandas
-    - Scikit-Learn
-    - Matplotlib, Seaborn
+- Librerías de Python para el procesamiento y analisis de datos como:
+  - Pandas
+  - Scikit-Learn
+  - Matplotlib, Seaborn
 - Entorno de desarrollo Visual Studio instalado localmente mediante Anaconda o en la nube mediante Google Colab.
-
 
 ## <a name="datos"></a> Conjunto de datos
 
 El conjunto de datos contiene información de pacientes como edad, peso, altura y algunos laboratorios relacionados con el riesgo cardiovascular. Es importante que revises el diccionario como primer paso para comprender estos datos. Los datos originales han sido tomados a partir de este enlace y han sido modificados para propósitos de este proyecto. El riesgo cardiovascular en los datos está representado por las variables CVD Risk Score,CVD Risk Level. En este laboratorio nos enfocamos en la variable CVD Risk Score (numérica continua).
 
-
-* [Datos de entrenamiento](data/Datos%20Lab%201.csv)
-* [Datos de prueba (no etiquetados)](data/Datos%20Test%20Lab%201.csv)
-* [Diccionario de datos](data/DiccPacientes.xlsx)
+- [Datos de entrenamiento](data/Datos%20Lab%201.csv)
+- [Datos de prueba (no etiquetados)](data/Datos%20Test%20Lab%201.csv)
+- [Diccionario de datos](data/DiccPacientes.xlsx)
 
 ## <a name="actividades"></a> Actividades a realizar
 
@@ -79,30 +73,31 @@ AlpesHeart desea que usted los apoye en el ciclo de machine learning para realiz
 - **Uso del modelo:** Generación de predicciones sobre los datos compartidos que no se encuentran etiquetados utilizando el mejor modelo. Exportar las predicciones en formato CSV utlizando como base el mismo archivo de datos dado.
 
 ## <a name="consideraciones"></a> Consideraciones
+
 Al hacer la división entrenamiento – test utiliza un valor de semilla de 42 (ramdon_state) y un porcentaje de 25% para el tamaño del conjunto de prueba (test_size=0.25).  
 
 ## <a name="resultados"></a> Análisis de resultados
-Una vez construido los modelos, deberías estar en capacidad de responder estas preguntas: 
 
-- ¿Cuál fue el valor de los diferentes coeficientes obtenidos en el mejor modelo? 
+Una vez construido los modelos, deberías estar en capacidad de responder estas preguntas:
 
-- A partir de la tabla comparativa, ¿cuál modelo ofrece el mejor rendimiento sobre el conjunto test? ¿Qué interpretación puedes darles a los valores obtenidos sobre las métricas de rendimiento? 
+- ¿Cuál fue el valor de los diferentes coeficientes obtenidos en el mejor modelo?
 
-- ¿Cuáles variables fueron seleccionadas con el modelo seleccionado? A partir de estas, ¿qué interpretación de cara al problema puedes dar? Reflexiona sobre cómo este nuevo conocimiento podría ayudar a tomar decisiones en el contexto del problema. 
+- A partir de la tabla comparativa, ¿cuál modelo ofrece el mejor rendimiento sobre el conjunto test? ¿Qué interpretación puedes darles a los valores obtenidos sobre las métricas de rendimiento?
 
-- A partir del contexto y los datos compartidos, ¿cómo representar la regresión lineal de forma matemática? Indique el método utilizado y el proceso para resolverlo. 
+- ¿Cuáles variables fueron seleccionadas con el modelo seleccionado? A partir de estas, ¿qué interpretación de cara al problema puedes dar? Reflexiona sobre cómo este nuevo conocimiento podría ayudar a tomar decisiones en el contexto del problema.
+
+- A partir del contexto y los datos compartidos, ¿cómo representar la regresión lineal de forma matemática? Indique el método utilizado y el proceso para resolverlo.
 
 - En el ciclo de machine learning ¿Qué tipos de sesgo podría afectar los resultados y por qué? Describe dos tipos de sesgo.
 
 ## <a name="entregables"></a> Entregables
 
-- Notebook (*.ipynb y *.html) por BloqueNeón con los nombres de los estudiantes. El Notebook debe estar documentado con las justificaciones de las decisiones tomadas en cada paso del ciclo de ML y las respuestas a las preguntas planteadas en el apartado “Análisis de resultados”. Además, deben ser visibles las ejecuciones de cada celda. 
+- Notebook (*.ipynb y*.html) por BloqueNeón con los nombres de los estudiantes. El Notebook debe estar documentado con las justificaciones de las decisiones tomadas en cada paso del ciclo de ML y las respuestas a las preguntas planteadas en el apartado “Análisis de resultados”. Además, deben ser visibles las ejecuciones de cada celda.
 - Archivo "Datos test Lab1.csv" con la etiqueta de las predicciones
 - Video explicativo.
 
 Esta entrega debe realizarse máximo el **16 de febrero 20:00**. Recuerda registrar en el grupo GL1, los dos integrantes que presentan este laboratorio, con el fin de habilitar el enlace de entrega.
 Si la entrega la hacen después de el **16 de febrero 20:00** y antes del **17 febrero 2:00 a.m.**, su entrega tendrá una penalización del 30%, lo que significa que será calificada sobre 3.5 y no sobre 5.0. Después de esta última fecha toda entrega tendrá una nota de 0.
-
 
 ## <a name="rubrica"></a> Criterios de evaluación
 
@@ -123,7 +118,8 @@ A continuación se encuentra la rúbrica de calificación que se utiliza para va
 **++ Los valores de RMSE serán calculados entre todos los grupos del curso. Se toma como base el archivo que entregan con la estimación del valor de CVD Risk Score. Los grupos que obtengan un valor de RMSE que esté dentro del "top 10" reciben un 5% adicional como bonificación.**
 
 ## <a name="principios"></a> Uso de IAG en actividades del curso ISIS2611
-La información que se presenta a continuación también está publicada en Bloque Neón, en la sección del curso **"Uso de la IA generativa"**. 
+
+La información que se presenta a continuación también está publicada en Bloque Neón, en la sección del curso **"Uso de la IA generativa"**.
 
 **Principios que rigen el uso de la IA en el curso**
 
